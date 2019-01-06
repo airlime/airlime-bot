@@ -6,15 +6,30 @@
   "dependencies": {
     "dotenv": "^6.2.0",
     "discord.js": "^11.4.2",
-    "discord.js-commando": "^0.10.0"
+    "discord.js-commando": "^0.10.0",
+    "express": "^4.16.4"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node .",
+    "start": "SET NODE_ENV=production&&npm start&&node server.js",
     "production": "SET NODE_ENV=production&&npm start",
     "development": "SET NODE_ENV=development&&npm start"
   },
   "author": "",
-  "license": "ISC"
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "engines": {
+    "node": "8.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }
